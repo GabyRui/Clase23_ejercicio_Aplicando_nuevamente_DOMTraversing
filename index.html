@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="bienvenida">
+            <img src="./images/Login-rafiki.png" alt="" class="image">
+            <h1 class="mensaje_h1">Te damos la bienvenida a tu cajero virtual</h1>
+        </div>
+
+        <div class="informacion">
+            <label for="usuario" class="label_datos">Ingrese sus datos</label>
+            <input type="dni" class="input_inicio" id="dni" placeholder="Ingrese su DNI">
+            <input type="password" class="input_inicio" id="contrasena" placeholder="Ingrese contraseña">
+            <button id="ingreso">Ingresar</button>
+        </div>
+
+        <div id="resultados">
+            <p id="mensaje"></p>
+        </div>
+
+        <p class="mensaje_incorrecto">Datos incorrectos. Verifique su información e intente nuevamente</p>
+    </div>
+
+    <!-- Menu -->
+
+    <div class="menu">
+        <button id="consultar_saldo">Consultar saldo</button>
+        <button id="ingresar_monto">Ingresar monto</button>
+        <button id="retirar_monto">Retirar monto</button>
+    </div>
+
+    <!-- consultar saldo -->
+
+    <div class="saldoContainer">
+        <p id="saldo_consulta"></p>
+        <button id="button_regresar">Regresar</button>
+    </div>
+
+    <!-- ingresar dinero -->
+
+    <div class="ingreso_dinero"> 
+        <div class="ingresarMonto">
+            <p>Ingresa el monto a recargar</p>
+            <input id="ingresar_dinero" type="text">
+            <button id="button_añadir">Añadir</button>
+            <button id="button_deposito_regresar">Regresar</button>
+        </div>
+
+        <p class="ingresar_saldoActual"></p>
+        
+    </div>
+
+    <!-- Retirar dinero -->
+
+    <div class="retirar_dinero"> 
+        <div class="retirarMontoDinero">
+            <p>Ingresa el monto a retirar</p>
+            <input id="retirar_cantidad" type="text">
+            <button id="button_retirar">Retirar</button>
+            <button id="button_retirar_regresar">Regresar</button>
+        </div>
+
+        <p class="retiro_saldoActual"></p>
+        <p class="retiro_erroneo"></p>
+        
+    </div>
+
+
+
+        
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
